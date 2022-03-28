@@ -1,5 +1,6 @@
-# sdc-urn-url-resolver
-A nagios plugin for a urn url resolver.
+# argo-probe-sdc-urn.url.resolver
+
+Monitoring Metrics for a urn url resolver.
 Check if `URN / URL Resolver` is contained in the HTML head title.
 
 
