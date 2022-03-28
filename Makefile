@@ -1,11 +1,8 @@
-PKGNAME=sdc-urn-url-resolver
+PKGNAME=argo-probe-sdc-urn.url.resolver
 SPECFILE=${PKGNAME}.spec
 FILES=urn_url_resolver.sh ${SPECFILE}
 
 PKGVERSION=$(shell grep -s '^Version:' $(SPECFILE) | sed -e 's/Version:\s*//')
-
-srpm: dist
-	rpmbuild -ts --define='dist .el6' ${PKGNAME}-${PKGVERSION}.tar.gz
 
 rpm: dist
 	rpmbuild -ta ${PKGNAME}-${PKGVERSION}.tar.gz
